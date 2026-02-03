@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer | Vaihit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>⏰ Pomodoro Timer</h1>
+
+    <div class="inputs">
+        <div class="input-group">
+            <label>Work (minutes)</label>
+            <input type="number" id="workInput" value="25" min="1">
+        </div>
+
+        <div class="input-group">
+            <label>Break (minutes)</label>
+            <input type="number" id="breakInput" value="5" min="1">
+        </div>
+    </div>
+
+    <div id="timer">25:00</div>
+
+    <div class="buttons">
+        <button onclick="startWork()">Start Work</button>
+        <button onclick="startBreak()">Start Break</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+
+    <footer>Built under <strong>Vaihit</strong></footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
